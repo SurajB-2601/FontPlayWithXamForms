@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FontPlayWithXamarinForms"
+             x:Class="FontPlayWithXamarinForms.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:Key="AgengSansFont" 
+                        x:TypeArguments="x:String" 
+                        iOS="agengsans" 
+                        Android="Fonts/agengsans.ttf#agengsans"
+                        />
+            <OnPlatform x:Key="RalewayBoldFont" 
+                        x:TypeArguments="x:String" 
+                        iOS="Raleway-Bold" 
+                        Android="Fonts/Raleway-Bold.ttf#Raleway-Bold"
+                        />
+            <OnPlatform x:Key="RalewayItalicFont" 
+                        x:TypeArguments="x:String" 
+                        iOS="Raleway-Italic" 
+                        Android="Fonts/Raleway-It.ttf#Raleway-Italic"
+                        />
+
+            <Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Large"/>
+                <Setter Property="TextColor" Value="#3d0031"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout Spacing="20" BackgroundColor="#f78adb">
+        <Label Text="Font Play with Xamarin Forms!" Margin="0,40,0,20"
+            Style="{StaticResource labelStyle}"
+           HorizontalOptions="Center" />
+
+        <Label Text="Font Play with Ageng Sans!" Style="{StaticResource labelStyle}"
+           VerticalOptions="Center"  FontFamily="{StaticResource AgengSansFont}"
+           HorizontalOptions="Center" />
+
+        <Label Text="Font Play with Raleway Bold!" 
+           Style="{StaticResource labelStyle}" FontFamily="{StaticResource RalewayBoldFont}"
+           HorizontalOptions="Center" />
+
+        <Label Text="Font Play with Raleway Italic!" 
+           Style="{StaticResource labelStyle}" FontFamily="{StaticResource RalewayItalicFont}"
+           HorizontalOptions="Center" />
+
+    </StackLayout>
+</ContentPage>
