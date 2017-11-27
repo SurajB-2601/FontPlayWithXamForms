@@ -13,29 +13,35 @@ There are three simple steps, you just have to read carefully.
 
   a. In iOS Fonts go under the Resources folder. Create a seperate folder for fonts under resources folder.
   
-	b. Paste the needed fonts in this Resources -> Fonts Folder. Alternatively, you can also place it 
-      directly under Resources Folder.
-	   In the sample i have 2 Font types : 
-	   One is Ageng Sans which is regular (Has single file agengsans.ttf)
-	   Other is Raleway which when I downloaded, has different files for different font attributes like Bold, Light, Italic.
-	   (Eg, Raleway-Bold.ttf, Raleway-Italic.ttf and RalewayLight.ttf)
+  b. Paste the needed fonts in this Resources -> Fonts Folder. Alternatively, you can also place it 
+     directly under Resources Folder.
+   In the sample i have 2 Font types : 
+   One is Ageng Sans which is regular (Has single file agengsans.ttf)
+   Other is Raleway which when I downloaded, has different files for different font attributes like
+   Bold, Light, Italic.
+   (Eg, Raleway-Bold.ttf, Raleway-Italic.ttf and RalewayLight.ttf)
      
 <img src="https://github.com/SurajB-2601/FontPlayWithXamForms/blob/master/screenshots/FontPlay1.png" height="400" />  
      
 
 ### 2.Set the proper build action for the Font Files: 
 
-  a. Now we have copied the files but we also have to set the build action to each of the font files as **BundleResource**. You can do that by      selecting all the fonts and set the build action to BundleResource in the properties window.
-     We also have to set the **“Copy to Output Directory” flag to “Always Copy”**.
+  a. Now we have copied the files but we also have to set the build action to each of the font files as
+  **BundleResource**. You can do that by      selecting all the fonts and set the build action to BundleResource
+  in the properties window.
+     We also have to set the __“Copy to Output Directory” flag to “Always Copy”__.
     These steps ensure that the font files go along with your app bundle and the app can access it.
     
-    <img src="https://github.com/SurajB-2601/FontPlayWithXamForms/blob/master/screenshots/FontPlay5.png" height="400" />  
+<img src="https://github.com/SurajB-2601/FontPlayWithXamForms/blob/master/screenshots/FontPlay5.png" />  
     
 ### 3.Make the font’s entry in Info.plist file: 
 
-  a. You can do this by Right Click the info.Plist file. Select Open With --> Generic Plist Editor. Now, You have to add a new Custom          Property “Fonts Provided by Application”. Add the .ttf file name paths with respect to the Resources directory. Since we have put the       files in Fonts folder under Resources, we will set the file paths in the following way.
+  a. You can do this by Right Click the info.Plist file. Select Open With --> Generic Plist Editor. 
+  Now, You have to add a new Custom Property “Fonts Provided by Application”. 
+  Add the .ttf file name paths with respect to the Resources directory. Since we have put the 
+  files in Fonts folder under Resources, we will set the file paths in the following way.
   
-   <img src="https://github.com/SurajB-2601/FontPlayWithXamForms/blob/master/screenshots/FontPlay3.png" height="200" />  
+<img src="https://github.com/SurajB-2601/FontPlayWithXamForms/blob/master/screenshots/FontPlay3.png" height="200" />  
    
   Try to directly copy paste the file names to avoid name conflict/mismatch.
   
