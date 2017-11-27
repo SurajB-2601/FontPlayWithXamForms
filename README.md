@@ -24,7 +24,7 @@ There are three simple steps, you just have to read carefully.
 <img src="https://github.com/SurajB-2601/FontPlayWithXamForms/blob/master/screenshots/FontPlay1.png" height="400" />  
      
 
-### 2.Set the proper build action for the Font Files: 
+### 2. Set the proper build action for the Font Files: 
 
   a. Now we have copied the files but we also have to set the build action to each of the font files as
   **BundleResource**. You can do that by      selecting all the fonts and set the build action to BundleResource
@@ -32,9 +32,9 @@ There are three simple steps, you just have to read carefully.
      We also have to set the __“Copy to Output Directory” flag to “Always Copy”__.
     These steps ensure that the font files go along with your app bundle and the app can access it.
     
-<img src="https://github.com/SurajB-2601/FontPlayWithXamForms/blob/master/screenshots/FontPlay5.png" />  
+<img src="https://github.com/SurajB-2601/FontPlayWithXamForms/blob/master/screenshots/FontPlay5.png" height="400"/>   
     
-### 3.Make the font’s entry in Info.plist file: 
+### 3. Make the font’s entry in Info.plist file: 
 
   a. You can do this by Right Click the info.Plist file. Select Open With --> Generic Plist Editor. 
   Now, You have to add a new Custom Property “Fonts Provided by Application”. 
